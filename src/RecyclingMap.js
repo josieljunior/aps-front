@@ -30,7 +30,8 @@ function RecyclingMap() {
                   }
                 >
                   <Popup>
-                    {point.name}
+                    {point.name} <br/>
+                    {point.address}
                   </Popup>
                 </Marker>
               ))}
