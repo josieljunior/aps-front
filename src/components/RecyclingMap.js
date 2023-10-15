@@ -10,13 +10,11 @@ function RecyclingMap() {
   const [selectedPoint, setSelectedPoint] = useState(null);
 
   const openModal = (point) => {
-    console.log('Opening modal...');
     setSelectedPoint(point);
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
-    console.log('Closing modal...');
     setModalIsOpen(false);
     setSelectedPoint(null);
   };

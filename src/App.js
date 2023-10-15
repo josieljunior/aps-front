@@ -4,11 +4,10 @@ import Stack from 'react-bootstrap/Stack';
 import Header from './components/Header';
 import Card from 'react-bootstrap/Card';
 
-
 function App() {
   return (
     <Stack gap={3}>
-      <div className="header">
+      <div>
         <Header />
       </div>
 
