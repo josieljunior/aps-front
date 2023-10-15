@@ -9,11 +9,6 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.map-container {
-  border: 2px solid red;
-  overflow: hidden;
-}
-
 .leaflet-container {
   height: 600px;
   width: 100%;
