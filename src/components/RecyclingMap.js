@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { recyclingPoints } from './data';
+import { recyclingPoints } from '../data';
 import InfoModal from './InfoModal';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'leaflet/dist/leaflet.css';
 import { Icon } from 'leaflet';
 

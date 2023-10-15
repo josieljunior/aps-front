@@ -1,8 +1,7 @@
 import React from 'react';
-import RecyclingMap from './RecyclingMap';
-import './index.css';
+import RecyclingMap from './components/RecyclingMap';
 import Stack from 'react-bootstrap/Stack';
-import Header from './Header';
+import Header from './components/Header';
 import Card from 'react-bootstrap/Card';
 
 
