@@ -17,7 +17,13 @@ function App() {
         </Card>
       </div>
 
-      <div className="p-2">Third item</div>
+      <div className="p-2">
+        <img
+          src={process.env.PUBLIC_URL + '/Lixeira.png'/100}
+          alt="Third item image"
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
     </Stack>
   );
 }
