@@ -38,10 +38,10 @@ function App() {
             <Modal.Title>Tipos de Recicláveis</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p style={{ color: 'red' }}>Vermelho (plástico): garrafas de refrigerante, embalagens de xampu e cremes, embalagens de comida etc.</p>
-            <p style={{ color: 'blue' }}>Azul (papel): folhas de caderno, papelão, embalagens de papel etc.</p>
-            <p style={{ color: 'green' }}>Verde (vidro): garrafas de cerveja e refrigerante, potes, copos, pratos ou louças de vidro que precisam ser descartadas etc.</p>
-            <p style={{ color: 'yellow' }}>Amarelo (metal): latas em geral, papel alumínio, embalagens etc.</p>
+            <p style={{ color: 'red' }}>(plástico): garrafas de refrigerante, embalagens de xampu e cremes, embalagens de comida etc.</p>
+            <p style={{ color: 'blue' }}>(papel): folhas de caderno, papelão, embalagens de papel etc.</p>
+            <p style={{ color: 'green' }}>(vidro): garrafas de cerveja e refrigerante, potes, copos, pratos ou louças de vidro que precisam ser descartadas etc.</p>
+            <p style={{ color: 'yellow' }}>(metal): latas em geral, papel alumínio, embalagens etc.</p>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseInfo}>
@@ -51,13 +51,13 @@ function App() {
         </Modal>
       </div>
 
-      <div className="p-2">
-        <img
-          src="https://www.ferrovelhocoradin.com.br/wp-content/uploads/2019/06/Lixeiras.png"
-          alt="Leixeira image"
-          style={{ width: '50%', height: 'auto' }}
-        />
-      </div>
+  <div style={{ display: 'flex', justifyContent: 'center' }} className="p-2">
+  <img
+    src="https://www.ferrovelhocoradin.com.br/wp-content/uploads/2019/06/Lixeiras.png"
+    alt="Leixeira image"
+    style={{ width: '40%', height: 'auto' }}
+  />
+</div>
 
     </Stack>
   );
