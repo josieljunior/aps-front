@@ -1,16 +1,28 @@
+@@ -1,17 +1,70 @@
+# Executar projeto
 # Getting Started with Create React App
 
+Instale o [Docker desktop](https://www.docker.com/products/docker-desktop)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Na pasta raiz do projeto, execute o comando:
 ## Available Scripts
 
+```
+docker-compose build
+```
 In the project directory, you can run:
 
+Após a finalização do build, execute o comando:
 ### `npm start`
 
+```
+docker-compose up
+```
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+Acesse o endereço [http://localhost:3000](http://localhost:3000) para visualizar o projeto.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
