@@ -19,9 +19,9 @@ function App() {
 
       <div className="p-2">
         <img
-          src={process.env.PUBLIC_URL + '/Lixeira.png'/100}
-          alt="Third item image"
-          style={{ width: '100%', height: 'auto' }}
+          src= "https://www.ferrovelhocoradin.com.br/wp-content/uploads/2019/06/Lixeiras.png"
+          alt="Leixeira image"
+          style={{ width: '50%', height: 'auto' }}
         />
       </div>
     </Stack>
