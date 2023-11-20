@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import RecyclingMap from './components/RecyclingMap';
+import ImageEducation from './components/ImageEducation';
+import TypesInfoModal from './components/TypesInfoModal';
 import Stack from 'react-bootstrap/Stack';
 import Header from './components/Header';
 import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function App() {
@@ -29,36 +30,17 @@ function App() {
           Atenção: A coleta de lixo deve atender os requisitos de reciclagem.
         </p>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Button variant="primary" onClick={handleShowInfo}>
+          <Button variant="primary" size='lg' onClick={handleShowInfo}>
             Tipos de Recicláveis
           </Button>
         </div>
-        <Modal show={showInfo} onHide={handleCloseInfo}>
-          <Modal.Header closeButton>
-            <Modal.Title>Tipos de Recicláveis</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <p style={{ color: 'red' }}>(plástico): garrafas de refrigerante, embalagens de xampu e cremes, embalagens de comida etc.</p>
-            <p style={{ color: 'blue' }}>(papel): folhas de caderno, papelão, embalagens de papel etc.</p>
-            <p style={{ color: 'green' }}>(vidro): garrafas de cerveja e refrigerante, potes, copos, pratos ou louças de vidro que precisam ser descartadas etc.</p>
-            <p style={{ color: 'yellow' }}>(metal): latas em geral, papel alumínio, embalagens etc.</p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseInfo}>
-              Fechar
-            </Button>
-          </Modal.Footer>
-        </Modal>
+        
+        <TypesInfoModal showInfo={showInfo} handleCloseInfo={handleCloseInfo} />
       </div>
 
-  <div style={{ display: 'flex', justifyContent: 'center' }} className="p-2">
-  <img
-    src="https://www.ferrovelhocoradin.com.br/wp-content/uploads/2019/06/Lixeiras.png"
-    alt="Leixeira image"
-    style={{ width: '40%', height: 'auto' }}
-  />
-</div>
-
+      <div className="p-2">
+        <ImageEducation />
+      </div>
     </Stack>
   );
 }

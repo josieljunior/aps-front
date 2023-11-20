@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import icon from '../images/icon.png';
 
 function Header() {
   return (
@@ -10,7 +11,16 @@ function Header() {
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand href="#">Pontos de Reciclagem</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <img
+            alt=""
+            src={icon}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}
+          Pontos de Reciclagem
+        </Navbar.Brand>
       </Container>
     </Navbar>
   );
